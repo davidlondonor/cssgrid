@@ -9,19 +9,79 @@
 	</head>
 	<body>
 		<h1>CSS Grid</h1>
-		<div class="templateBasic">
-			<code
-				>grid-template-columns: 1fr 1fr 1fr; <br />
-				grid-template-rows: 100px 100px;</code
-			>
-		</div>
-		<div class="contenedor">
-			<div class="hijo1">1</div>
-			<div class="hijo2">2</div>
-			<div class="hijo3">3</div>
-			<div class="hijo4">4</div>
-			<div class="hijo5">5</div>
-			<div class="hijo6">6</div>
-		</div>
+		<section class="seccionUno">
+			<div class="templateBasic">
+				<p>Las Fracciones fr</p>
+				<code
+					>grid-template-columns: 1fr 1fr 1fr; <br />
+					grid-template-rows: 100px 100px;</code
+				>
+			</div>
+			<div class="contenedor">
+				<div class="hijo1">1</div>
+				<div class="hijo2">2</div>
+				<div class="hijo3">3</div>
+				<div class="hijo4">4</div>
+				<div class="hijo5">5</div>
+				<div class="hijo6">6</div>
+			</div>
+		</section>
+		<hr />
+		<section class="seccionUno">
+			<div class="templateBasic">
+				<p>Valores Fijos</p>
+				<code
+					>grid-template-columns: 100px 100px 150px; <br />
+					grid-template-rows: 100px 100px 1fr;</code
+				>
+			</div>
+			<div class="contenedorDos">
+				<div class="hijo1">1</div>
+				<div class="hijo2">2</div>
+				<div class="hijo3">3</div>
+				<div class="hijo4">4</div>
+				<div class="hijo5">5</div>
+				<div class="hijo6">6</div>
+				<div class="hijo6">7</div>
+			</div>
+		</section>
+		<hr />
+		<section class="seccionUno">
+			<div class="templateBasic">
+				<p>Repeat</p>
+				<code
+					>grid-template-columns: repeat(3, 100px) <br />
+					grid-template-rows: repeat(3, 100); <br />row-gap: 1rem;</code
+				>
+			</div>
+			<div class="contenedorTres">
+				<div class="hijo1">1</div>
+				<div class="hijo2">2</div>
+				<div class="hijo3">3</div>
+				<div class="hijo4">4</div>
+				<div class="hijo5">5</div>
+				<div class="hijo6">6</div>
+				<div class="hijo6">7</div>
+			</div>
+		</section>
+		<hr />
+		<section class="seccionUno">
+			<div class="templateBasic">
+				<p>Forma Moderna de usar CSS GRID</p>
+				<code
+					>grid-template: repeat(3, 100px) / repeat(3, 100px) <br />
+					column-gap: 1rem; <br />
+					Se usaba: grid-column-gap</code
+				>
+			</div>
+			<div class="contenedorCuatro">
+				<div class="hijo1">1</div>
+				<div class="hijo2">2</div>
+				<div class="hijo3">3</div>
+				<div class="hijo4">4</div>
+				<div class="hijo5">5</div>
+				<div class="hijo6">6</div>
+			</div>
+		</section>
 	</body>
 </html>

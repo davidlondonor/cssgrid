@@ -2,7 +2,6 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 100px 100px;
-	grid-gap: 10px;
 	width: 20%;
 	height: 50%;
 	background-color: rgb(122, 216, 245);
@@ -67,4 +66,67 @@ h1 {
 	margin: 1rem;
 	align-items: center;
 	justify-content: center;
+}
+
+.seccionUno {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 1rem;
+}
+sectionUno div code {
+	background-color: #f7ec4a;
+}
+
+.templateBasic {
+	flex-direction: column;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+code {
+	background-color: gainsboro;
+	font-weight: 500;
+	padding: 2rem;
+	border-radius: 0.75rem;
+}
+
+.contenedorDos {
+	display: grid;
+	grid-template-columns: 100px 100px 150px;
+	grid-template-rows: 100px 100px 1fr;
+	grid-gap: 10px;
+	width: 20%;
+	height: 50%;
+	background-color: rgb(122, 216, 245);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 5rem;
+	color: #126791;
+	border-radius: 1rem;
+}
+
+.contenedorTres {
+	display: grid;
+	grid-template-columns: repeat(3, 100px);
+	grid-template-rows: repeat(3, 100px);
+	row-gap: ;
+	width: 20%;
+	height: 50%;
+	background-color: rgb(194, 230, 97);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 5rem;
+	color: #126791;
+	border-radius: 1rem;
+}
+
+.contenedorCuatro {
+	display: grid;
+	grid-template: repeat(2, 90px) / repeat(2, 150px);
+	column-gap: 1rem;
+	background-color: rgb(194, 230, 97);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 5rem;
+	color: #126791;
+	border-radius: 1rem;
 }
