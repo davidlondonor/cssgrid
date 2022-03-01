@@ -9,7 +9,7 @@
 	</head>
 	<body>
 		<h1>CSS Grid</h1>
-		<!-- <section class="seccionUno">
+		<section class="seccionUno">
 			<div class="templateBasic">
 				<p>Las Fracciones fr</p>
 				<code
@@ -126,14 +126,14 @@
 				<div class="hijo1">1</div>
 				<div class="hijo1">2</div>
 			</div>
-		</section> -->
+		</section>
 		<hr />
 		<section class="seccionUno">
 			<div class="templateBasic">
-				<p>Justify-self</p>
+				<p>Align-items y Justify-items</p>
 				<code>
-					grid-template-columns: repeat(2, 1fr); <br />
-					justify-self: center; (En el hijo)
+					align-items: stretch; <br />
+					justify-items: start;
 				</code>
 			</div>
 			<div class="contenedorOcho">
@@ -141,6 +141,30 @@
 				<div class="item">2</div>
 				<div class="item">3</div>
 				<div class="item">4</div>
+				<div class="item">5</div>
+				<div class="item">6</div>
+				<div class="item">7</div>
+			</div>
+		</section>
+		<hr />
+		<section class="seccionUno">
+			<div class="templateBasic">
+				<p>Justify-self en el hijo</p>
+				<code>
+					justify-self: start; <br />
+					align-self: end;
+					<br />
+					justify-self: end;
+				</code>
+			</div>
+			<div class="contenedorNueve">
+				<div class="itemNueve">1</div>
+				<div class="itemNueve">2</div>
+				<div class="itemNueve">3</div>
+				<div class="itemNueve">4</div>
+				<div class="itemNueve">5</div>
+				<div class="itemNueve">6</div>
+				<div class="itemNueve">7</div>
 			</div>
 		</section>
 	</body>
