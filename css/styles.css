@@ -172,3 +172,28 @@ code {
 	row-gap: 20px;
 	column-gap: 20px;
 }
+.contenedorOcho {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	background-color: rgb(194, 230, 97);
+	width: 200px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 5rem;
+	color: #126791;
+	border-radius: 1rem;
+	row-gap: 20px;
+	column-gap: 20px;
+	border: 2px solid black;
+}
+
+.item:nth-child(1) {
+	background-color: pink;
+	border-radius: 10px;
+	justify-self: center;
+	width: 100px;
+	border: 2px solid yellow;
+}
+.item:not(:nth-child(1)) {
+	background-color: rgb(130, 247, 230);
+	border: 2px solid magenta;
+}
