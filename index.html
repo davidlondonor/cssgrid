@@ -87,7 +87,7 @@
 		<section class="seccionUno">
 			<div class="templateBasic">
 				<p>Valores min y max</p>
-				<code></code>
+				<code>
 					grid-template: repeat(2, 90px) / repeat(3, minmax(100px, 150px));
 				</code>
 			</div>
@@ -96,6 +96,35 @@
 				<div class="hijo2">2</div>
 				<div class="hijo3">3</div>
 				<div class="hijo4">4</div>
+			</div>
+		</section>
+		<hr />
+		<section class="seccionUno">
+			<div class="templateBasic">
+				<p>Auto Fit / Auto Fill</p>
+				<code>
+					grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+				</code>
+			</div>
+			<div class="contenedorSeis">
+				<div class="hijo1">1</div>
+				<div class="hijo2">2</div>
+				<div class="hijo3">3</div>
+				<div class="hijo4">4</div>
+			</div>
+		</section>
+		<hr />
+		<section class="seccionFitContent">
+			<div class="templateBasic">
+				<p>Fit-content</p>
+				<code>
+					grid-template-columns: fit-content(100px) repeat(2, minmax(100px,
+					150px));
+				</code>
+			</div>
+			<div class="contenedorSiete">
+				<div class="hijo1">1</div>
+				<div class="hijo1">2</div>
 			</div>
 		</section>
 	</body>
