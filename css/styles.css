@@ -1,11 +1,16 @@
+body {
+	background-color: #e5f1f7;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
 .contenedor {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 100px 100px;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 	width: 20%;
 	height: 50%;
-	background-color: rgb(122, 216, 245);
-	font-family: Arial, Helvetica, sans-serif;
 	font-size: 5rem;
 	color: #126791;
 	border-radius: 1rem;
@@ -56,23 +61,23 @@
 h1 {
 	font-size: 2rem;
 	color: #126791;
-	font-family: Arial, Helvetica, sans-serif;
 	display: flex;
 	justify-content: center;
 }
 
 .templateBasic {
-	display: flex;
-	margin: 1rem;
-	align-items: center;
-	justify-content: center;
+	display: grid;
+	place-items: center;
+	row-gap: 3rem;
+	padding-right: 2rem;
 }
 
 .seccionUno {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin: 1rem;
+	/* display: grid; Pastel */
+	border: 1px solid #126791;
 }
 sectionUno div code {
 	background-color: #f7ec4a;
@@ -80,7 +85,6 @@ sectionUno div code {
 
 .templateBasic {
 	flex-direction: column;
-	font-family: Arial, Helvetica, sans-serif;
 	font-size: 1rem;
 	font-weight: bold;
 }
@@ -100,7 +104,6 @@ code {
 	width: 20%;
 	height: 50%;
 	background-color: rgb(122, 216, 245);
-	font-family: Arial, Helvetica, sans-serif;
 	font-size: 5rem;
 	color: #126791;
 	border-radius: 1rem;
@@ -114,7 +117,6 @@ code {
 	width: 20%;
 	height: 50%;
 	background-color: rgb(194, 230, 97);
-	font-family: Arial, Helvetica, sans-serif;
 	font-size: 5rem;
 	color: #126791;
 	border-radius: 1rem;
@@ -125,7 +127,6 @@ code {
 	grid-template: repeat(2, 90px) / repeat(2, 150px);
 	column-gap: 1rem;
 	background-color: rgb(194, 230, 97);
-	font-family: Arial, Helvetica, sans-serif;
 	font-size: 5rem;
 	color: #126791;
 	border-radius: 1rem;
@@ -135,7 +136,6 @@ code {
 	display: grid;
 	grid-template: repeat(2, 90px) / repeat(3, minmax(100px, 150px));
 	background-color: rgb(194, 230, 97);
-	font-family: Arial, Helvetica, sans-serif;
 	font-size: 5rem;
 	color: #126791;
 	border-radius: 1rem;
@@ -147,7 +147,6 @@ code {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	background-color: rgb(194, 230, 97);
-	font-family: Arial, Helvetica, sans-serif;
 	font-size: 5rem;
 	color: #126791;
 	border-radius: 1rem;
@@ -165,7 +164,6 @@ code {
 	display: grid;
 	grid-template-columns: 1fr fit-content(300px) 2fasfr;
 	background-color: rgb(194, 230, 97);
-	font-family: Arial, Helvetica, sans-serif;
 	font-size: 5rem;
 	color: #126791;
 	border-radius: 1rem;
@@ -180,7 +178,6 @@ code {
 	justify-items: center;
 	background-color: rgb(194, 230, 97);
 	width: 200px;
-	font-family: Arial, Helvetica, sans-serif;
 	font-size: 5rem;
 	color: #126791;
 	border-radius: 1rem;
@@ -201,12 +198,11 @@ code {
 	grid-template-columns: 200px 200px;
 	grid-template-rows: minmax(150px, auto);
 	background-color: rgb(194, 230, 97);
-	font-family: Arial, Helvetica, sans-serif;
 	font-size: 5rem;
 	color: #126791;
 	border-radius: 1rem;
-	row-gap: 20px;
-	column-gap: 20px;
+	row-gap: 15px;
+	column-gap: 15px;
 }
 
 .itemNueve:nth-child(1) {
@@ -216,7 +212,7 @@ code {
 	justify-self: start;
 	align-self: end;
 }
-.itemNueve:not(:nth-child(1), :nth-child(7)) {
+.itemNueve:not(:nth-child(1), :last-child) {
 	background-color: rgb(130, 151, 247);
 	border: 2px solid salmon;
 }
